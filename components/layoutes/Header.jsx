@@ -45,12 +45,12 @@ const Header = () => {
                   src={"/images/default.png"}
                 />
                 <div className="space-y-1 font-medium">
-                  {/* <p>
+                  <p>
                     Ghulam
                     <time className="block text-sm text-gray-500 dark:text-gray-400">
                       test@gmail.com
                     </time>
-                  </p> */}
+                  </p>
                 </div>
               </div>
             </Link>

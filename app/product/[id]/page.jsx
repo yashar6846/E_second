@@ -1,4 +1,3 @@
-
 import ProductDetails from "@/components/products/ProductDetails";
 import axios from "axios";
 import React from "react";

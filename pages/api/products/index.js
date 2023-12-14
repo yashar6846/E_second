@@ -1,15 +1,15 @@
-import {createRouter} from "next-connect";
+import nc from "next-connect";
 import dbConnect from "@/backend/config/dbConnect";
 import {
   getProducts,
   newProduct,
 } from "@/backend/controllers/productControllers";
 
-const router = createRouter();
+const handler = nc();
 
 dbConnect();
 
-router.get(getProducts);
-router.post(newProduct);
+handler.get(getProducts);
+handler.post(newProduct);
 
-export default router.handler();
+export default handler;

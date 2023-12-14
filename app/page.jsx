@@ -1,4 +1,3 @@
-
 import React from "react";
 import axios from "axios";
 import ListProducts from "@/components/products/ListProducts";

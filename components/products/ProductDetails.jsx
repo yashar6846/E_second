@@ -1,10 +1,8 @@
-
 "use client";
 
 import React, { useRef } from "react";
 import StarRatings from "react-star-ratings";
-import BreadCrumbs from "../layoutes/BreadCrumbs";
-
+import BreadCrumbs from "../layouts/BreadCrumbs";
 
 const ProductDetails = ({ product }) => {
   const imgRef = useRef(null);
@@ -24,7 +22,6 @@ const ProductDetails = ({ product }) => {
   ];
   return (
     <>
-    
       <BreadCrumbs breadCrumbs={breadCrumbs} />
       <section className="bg-white py-10">
         <div className="container max-w-screen-xl mx-auto px-4">
@@ -89,7 +86,7 @@ const ProductDetails = ({ product }) => {
                 <span className="text-green-500">Verified</span>
               </div>
 
-              <p className="mb-4 font-semibold text-xl">${product?.price}</p>
+              <p className="mb-4 font-semibold text-xl">{product?.price}Tl</p>
 
               <p className="mb-4 text-gray-500">{product?.description}</p>
 
